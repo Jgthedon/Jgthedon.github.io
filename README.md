@@ -18,3 +18,4 @@ Examples of how to use the project
 
 -Jonathan Griffith 
 -Gerald Anyanwu
+- Seven Peters Marcano
