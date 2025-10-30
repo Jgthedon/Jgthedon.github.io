@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    main article p:first-of-type { text-indent: 0.75rem; }
+  </style>
+
+  <title>Jonathan Griffith — Profile</title>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Jonathan Griffith</h1>
+      <p class="tagline">Student • Developer • Problem Solver</p>
+      <nav aria-label="Primary">
+        <ul class="nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#interests">Interests</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Me</h2>
+
+      <figure class="profile-figure">
+        <img src="bitmoji.jpeg" alt="Emoji for profile pic" style="border-radius: 12px;" width="260" height="260" />
+        <figcaption>Always learning, always building.</figcaption>
+      </figure>
+
+      <p>
+        Hi! I’m Jonathan Griffith, a quick learner who needs to have hands-on attention for me 
+        to have the best learning experience. Some of my favourite hobbies
+        <em>working-out, gaming, and racing my car on the track</em>. But, Lately I’ve been exploring
+        modern web fundamentals and sharpening my CSS and JavaScript skills.
+      </p>
+      <p>
+        Outside of coding, I’m into designing games through python, solving problems using Coddy,
+        and helping classmates debug. I value steady improvement and completeing
+        task in a timely manner, these are key for day-to-day for keeping me on track.
+      </p>
+
+      <p>
+        You can usually find me creating projects on GitHub
+        <a href="https://github.com/Jgthedon/Jgthedon.github.io" target="_blank" rel="noopener">GitHub</a>
+        to help me get a better underastanding on launching a website.
+      </p>
+    </article>
+
+    <section id="interests" aria-labelledby="interests-heading">
+      <h2 id="interests-heading">Interests</h2>
+      <p>
+        I’m currently experimenting with layout techniques, including Flexbox and Grid,
+        and I enjoy making simple components that feel delightful to use.
+      </p>
+
+      <aside class="callout" aria-label="Fun fact">
+        <strong style="background: #fffbea; padding: 0.1rem 0.35rem; border-radius: 0.35rem;">
+          Fun fact:
+        </strong>
+        I love going on long walks with my dog and enjoying the outside weather.
+      </aside>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <p>
+        If you wanna reach out? Shoot me a message at
+        <a href="mailto:jonathangriffith21@gmail.com">jonathangriffith21@gmail.com</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <small>&copy; <span id="year"></span> Jonathan Griffith. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

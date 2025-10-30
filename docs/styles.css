@@ -1,0 +1,117 @@
+
+:root {
+  --bg: #f3f6fb;       
+  --ink: #1f2937;      
+  --muted: #6b7280;    
+  --brand: #2563eb;    
+  --surface: #ffffff;  
+  --ring: rgba(37, 99, 235, 0.15);
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  color: var(--ink);
+  font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: var(--bg);
+}
+
+.container {
+  width: min(100%, 900px);
+  margin-inline: auto;
+  padding: 1rem;
+}
+
+header {
+  background: var(--surface);
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+h1 {
+  margin: 0.5rem 0 0.25rem 0;
+  font-size: clamp(1.5rem, 0.7rem + 3vw, 2.2rem);
+}
+
+.tagline {
+  margin: 0 0 0.75rem 0;
+  color: var(--muted);
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0.25rem 0 0.5rem 0;
+}
+
+.nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--brand);
+  outline: none;
+}
+
+.nav a:focus-visible {
+  box-shadow: 0 0 0 0.2rem var(--ring);
+  border-radius: 0.4rem;
+}
+
+main {
+  display: grid;
+  gap: 2rem;
+  padding-block: 1.25rem 2.5rem;
+}
+
+.profile-figure {
+  float: right;
+  margin: 0 0 0.5rem 1rem;
+  text-align: center;
+}
+
+.profile-figure img {
+  display: block;
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  border: 1px solid #e5e7eb;
+}
+
+.profile-figure figcaption {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+h2 {
+  margin: 0.5rem 0 0.35rem 0;
+  font-size: clamp(1.15rem, 0.8rem + 1.2vw, 1.5rem);
+}
+
+.callout {
+  background: var(--surface);
+  border: 1px solid #e5e7eb;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.04);
+}
+
+footer {
+  border-top: 1px solid #e5e7eb;
+  background: var(--surface);
+  color: var(--muted);
+  padding: 1rem 0;
+}
+
+@media (max-width: 640px) {
+  .profile-figure {
+    float: none;
+    margin: 0 auto 1rem auto;
+  }
+}
